@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Progress
+{% endblock %}
+
+{% block main %}
+    <div class="w3-container w3-center" style="margin-top:50px;"> 
+        <h1>Your Quiz Progress</h1> 
+        <table class="w3-table-all w3-hoverable w3-striped w3-centered" style="width:70%; margin:auto;"> 
+            <thead> 
+                <tr class="w3-blue"> 
+                    <th>Question</th> 
+                    <th>Result</th> 
+                    <th>Answered At</th> 
+                </tr> 
+            </thead> 
+            <tbody> 
+                {% for entry in progress_data %} 
+                <tr class="{% if loop.index is even %}w3-black{% else %}w3-grey{% endif %}"> 
+                    <td>{{ entry.question }}</td> 
+                    <td>{{ entry.is_correct | convert_is_correct }}</td> 
+                    <td>{{ entry.answered_at }}</td> 
+                </tr> 
+                {% endfor %} 
+            </tbody> 
+        </table> 
+    </div>
+{% endblock %}

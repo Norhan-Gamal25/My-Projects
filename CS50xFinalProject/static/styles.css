@@ -1,0 +1,54 @@
+body {
+    background-image: url("https://media2.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3dzMxMmR5MDl5YmthY203M3Y2bnNjZGRpNHB0ZzRybTc5ZjBod211ZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/mW03sTZVT9IY0/giphy.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    font-family: Stanford, Source Serif Pro, Georgia, Times, Times New Roman, serif !important;
+}
+
+h1 {
+    font-size: 3.5em;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+    font-size: 1.9em;
+    color: white;
+}
+
+input {
+    width: 90%;
+    max-width: 706px;
+    height: 46px;
+    border: 2px solid #005fcc;
+    border-radius: 5px;
+}
+
+nav .navbar-brand {
+    font-size: xx-large;
+}
+
+nav .navbar-brand .red {
+    color: #272f9e;
+}
+
+a:focus { 
+    outline: 3px solid #005fcc;
+    outline-offset: 2px;
+}
+
+p {
+    font-size: 1.2em;
+    color: white;
+    text-align: left;
+}
+
+.w3-table-all tr:hover { 
+    background-color: #2e7d32 !important;
+    color: white; 
+}

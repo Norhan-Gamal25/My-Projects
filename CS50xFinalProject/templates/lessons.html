@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Lessons
+{% endblock %}
+
+{% block main %}
+    <div style="max-width:800px; margin:auto;">
+        <h1 style="text-align:center;">Braille Lessons</h1><br>
+        <div class="w3-blue">
+            <button  onclick="myFunction('Demo1')" class="w3-button w3-block" style="height:100%; font-size: 1.5em">Lesson 1: Memorizing Braille Grade 2</button>
+                <div id="Demo1" class="w3-container w3-hide" style="background-color:#f0f0f0;">
+                    <iframe  height="570" width="100%" src="https://www.youtube.com/embed/g9hUmlXyabk" title="Grade 2 Braille [1/7] - How to Memorize 50 of the 64 Braille Cells" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
+                </div>
+        </div>
+        <div class="w3-blue">
+            <button  onclick="myFunction('Demo2')" class="w3-button w3-block" style="height:100%; font-size: 1.5em">Lesson 2: Advanced Braille Techniques</button>
+                <div id="Demo2" class="w3-container w3-hide" style="background-color:#f0f0f0;">
+                    <iframe height="570" width="100%" src="https://www.youtube.com/embed/G-4NRZ55vKk" title="Grade 2 Braille [2/7] - Numbers, Capital Letters and Italics" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+        </div>
+        <div class="w3-blue">
+            <button  onclick="myFunction('Demo3')" class="w3-button w3-block" style="height:100%; font-size: 1.5em">Lesson 3: Practical Braille Application</button>
+                <div id="Demo3" class="w3-container w3-hide" style="background-color:#f0f0f0;">
+                    <iframe height="570" width="100%" src="https://www.youtube.com/embed/CakryWWZOTM" title="Grade 2 Braille [3/7] - Punctuation Marks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+        </div>
+    </div>
+    <script>
+        function myFunction(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+        }
+    </script>
+{% endblock %}
+
+
