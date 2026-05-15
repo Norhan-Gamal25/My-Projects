@@ -1,5 +1,5 @@
 # ASL Classification CNN
-[!important]
+[!IMPORTANT]
 You should run the notebook with your own directory to the data files, yoy can download the dataset from [Kaggle](https://www.kaggle.com/datasets/lexset/synthetic-asl-alphabet)
 ## Overview
 This repository contains a Convolutional Neural Network (CNN) built with TensorFlow and Keras to classify American Sign Language (ASL) alphabet images. The primary objective is to provide an efficient, highly accurate computer vision model capable of recognizing static ASL gestures, prioritizing robust evaluation and practical application.
