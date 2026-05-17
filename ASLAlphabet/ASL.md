@@ -17,8 +17,8 @@ The network is designed for precise feature extraction without unnecessary compu
 3. **Classification Head**: The extracted features are flattened and passed through a 256-unit `Dense` layer, terminating in a softmax output layer mapped to the ASL classes.
 
 ## Training Configuration
-* **Batch Size**: 32
-* **Epochs**: 20 
+* **Batch Size**: 64
+* **Epochs**: 25 
 * **Optimizer**: Adam
 * **Loss Function**: Categorical Crossentropy
 * **Callbacks Implemented**: 
@@ -27,10 +27,9 @@ The network is designed for precise feature extraction without unnecessary compu
 
 ## Results
 The model was evaluated against an unseen test set to ensure strict, unbiased metrics. 
-* **Final Test Accuracy**: 98.15%
-* **Final Test Loss**: 0.0646
+* **Final Test Accuracy**: 98.78%
 
-Classification reports confirm F1-scores consistently between 0.94 and 1.00 across the alphabet classes, indicating a highly reliable model with minimal class bias.
+Classification reports confirm F1-scores consistently between 0.95 and 1.00 across the alphabet classes, indicating a highly reliable model with minimal class bias.
 
 ## Execution Requirements
 To replicate these results, ensure the following core dependencies are installed in your environment:
