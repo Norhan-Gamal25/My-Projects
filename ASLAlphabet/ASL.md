@@ -28,8 +28,9 @@ The network is designed for precise feature extraction without unnecessary compu
 ## Results
 The model was evaluated against an unseen test set to ensure strict, unbiased metrics. 
 * **Final Test Accuracy**: 98.78%
+* **Final loss**: 4.26%
 
-Classification reports confirm F1-scores consistently between 0.95 and 1.00 across the alphabet classes, indicating a highly reliable model with minimal class bias.
+Classification reports confirm F1-scores consistently between 0.96 and 1.00 across the alphabet classes, indicating a highly reliable model with minimal class bias.
 
 ## Execution Requirements
 To replicate these results, ensure the following core dependencies are installed in your environment:
